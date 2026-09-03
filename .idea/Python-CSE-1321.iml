@@ -7,4 +7,6 @@
     <orderEntry type="jdk" jdkName="~/PycharmProjects/Python-CSE-1321/.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PyDocumentationSettings" />
+  <component name="TestRunnerService" />
 </module>
