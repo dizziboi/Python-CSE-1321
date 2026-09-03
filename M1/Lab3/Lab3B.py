@@ -2,7 +2,7 @@
 # Section: B09
 # Term: Fall
 # Instructor: Jui Mhatre
-# Name: Caleb
+# Name: Caleb B
 # Lab: 1
 C1H = int(input("Course 1 hours: "))
 C1G = int(input("Grade for course 1:"))
