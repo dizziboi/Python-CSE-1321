@@ -2,7 +2,7 @@
 # Section: B09
 # Term: Fall
 # Instructor: Jui Mhatre
-# Name: Caleb Brown
+# Name: Caleb
 # Lab: 1
 cc_Amount = float(input("Amount owed:$"))
 APR = float(input("APR:"))
