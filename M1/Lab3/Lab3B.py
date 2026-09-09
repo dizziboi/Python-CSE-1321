@@ -21,5 +21,5 @@ totalQualityPoints = qualityPoint1+qualityPoint2+qualityPoint3+qualityPoint4
 GPA = totalQualityPoints/totalHours
 
 print("Total hours:",totalHours)
-print("Total quality points",totalQualityPoints)
-print("Your GPA for this semester is ",round(GPA,2))
+print("Total quality points:",totalQualityPoints)
+print("Your GPA for this semester is",round(GPA,2))
