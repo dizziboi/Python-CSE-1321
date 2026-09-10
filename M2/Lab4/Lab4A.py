@@ -4,31 +4,33 @@
 # Instructor: Jui Mhatre
 # Name: Caleb Brown
 # Lab: 1
-grade = float(input("Enter your grade:"))
+grade = float(input("Enter your grade: "))
 letterGrade= ""
 if grade > 97:
     letterGrade = "A+"
 elif grade >=97:
-    print("A")
+    letterGrade = "A"
 elif grade >=94:
-    print("A-")
+    letterGrade = "-A"
 elif grade >=91:
-    print("B+")
+    letterGrade = "B+"
 elif grade >=88:
-    print("B")
+    letterGrade = "B"
 elif grade >=85:
-    print("B-")
+    letterGrade = "B-"
 elif grade >=82:
-    print("C+")
+    letterGrade = "C+"
 elif grade >=79:
-    print("C")
+    letterGrade = "C"
 elif grade >=76:
-    print("C-")
+    letterGrade = "C-"
 elif grade >=73:
-    print("D+")
+    letterGrade = "D+"
 elif grade >=70:
-    print("D")
+    letterGrade = "D"
 elif grade >=67:
-    print("D-")
+    letterGrade = "D-"
 else:
-    print("F")
+    letterGrade = "F"
+
+print("Letter grade is:",letterGrade)
