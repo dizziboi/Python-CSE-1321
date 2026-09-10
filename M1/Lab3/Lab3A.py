@@ -10,7 +10,5 @@ MPR = APR/12
 MPR_P = MPR/100
 min_Pay= cc_Amount * MPR_P
 
-
-
 print("Monthly percentage rate:" ,round(MPR,3))
-print("Minimum payment:$" ,round(min_Pay,2))
+print("Minimum payment: $"+str(round(min_Pay,2)))
