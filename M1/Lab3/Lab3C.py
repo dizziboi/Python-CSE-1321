@@ -4,11 +4,11 @@
 # Instructor: Jui Mhatre
 # Name: Caleb Brown
 # Lab: 1
-smallSandwich = int(input("Enter the number of small sandwiches:"))
+smallSandwich = int(input("Enter the number of small sandwiches: "))
 ssTime = smallSandwich * 30
-mediumSandwich = int(input("Enter the number of medium sandwiches:"))
+mediumSandwich = int(input("Enter the number of medium sandwiches: "))
 msTime = mediumSandwich * 60
-largeSandwich = int(input("Enter the number of large sandwiches:"))
+largeSandwich = int(input("Enter the number of large sandwiches: "))
 lsTime = largeSandwich * 75
 xlSandwich = int(input("Enter the number of extra-large sandwiches: "))
 xlsTime = xlSandwich * 135
