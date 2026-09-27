@@ -16,16 +16,13 @@ print("3 - 10:1")
 SelRatio=int(input("> "))
 if SelRatio==1:
     ratio=3
-    print("")
+    print("You have selected the 3:1 ratio")
 elif SelRatio==2:
     ratio=4
-    print("")
+    print("You have selected the 4:1 ratio")
 elif SelRatio==3:
     ratio=10
-    print("")
-else:
-    ratio=2
-    print("")
+    print("You have selected the 10:1 ratio")
 OutLevel=(((TH-loud)/ratio)-TH)*1
 if loud<TH:
     print("Output Level:",loud,"dB")
