@@ -5,17 +5,19 @@
 # Name: Caleb Brown
 # Lab: 1
 num = int(input("Please enter a value for the size: "))
+print("")
 print("This is the requested "+ str(num) +"x"+ str(num), "box:")
 for i in range(1,num+1):
     for j in range(1,num+1):
         print("*",end="")
     print()
-print("This is the requested right-facing "+ str(num) +"x"+ str(num), "triangle:")
+
+print("This is the requested right-facing "+ str(num) +"x"+ str(num), "right-triangle:")
 for i in range(1,num+1):
     for j in range(1,i+1):
         print("*",end="")
     print()
-print("This is the requested left-facing "+ str(num) +"x"+ str(num), "triangle:",end="")
+print("This is the requested left-facing "+ str(num) +"x"+ str(num), "right-triangle:",end="")
 
 for i in range(1,num+2):
     for j in range(num):

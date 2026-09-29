@@ -4,7 +4,9 @@
 # Instructor: Jui Mhatre
 # Name: Caleb Brown
 # Lab: 1
-while(True):
-    name = input("If you would like to stop this program, say \"please\": ")
+please = True
+while please:
+    name = input("If you would like to stop this program, say \"please\": \n")
     if name == "please":
+        please = False
         print("Program complete")

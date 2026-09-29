@@ -8,8 +8,8 @@ cnt = 1
 large = 0
 print("Please enter 10 numbers and this program will display the largest.")
 for cnt in range(cnt,11):
-   num = int(input("please input number " + str(cnt) +": "))
+   num = int(input("Please enter number " + str(cnt) +": \n"))
    if num > large:
        large = num
-print("\nThe largest number was " , large)
+print("The largest number was" , large)
 
