@@ -5,9 +5,15 @@
 # Name: Caleb Brown
 # Lab: 6
 NumRows = int(input("Enter Number for Rows or 0 to quit: "))
-active = True
-while active:
-    if NumRows == 0:
-        active = False
-    else:
-        print("tomorrow pyramid")
+# while True:
+#     if NumRows == 0:
+#         break
+#     else:
+for i in range(1,NumRows+1):
+    print(" "*(NumRows-i),end="")
+    for j in range(i,0,-1):
+        print(j,end="")
+    for k in range(2,i+1):
+        print(k,end="")
+    print()
+

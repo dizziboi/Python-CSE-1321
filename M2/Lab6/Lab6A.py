@@ -21,7 +21,7 @@ while Active:
             op2 = int(input("Enter the other operand: "))
             for i in range(op2):
                 total+=op1
-            print(total)
+            print(op1,"x",op2,"=",total)
         case 2:
             a = int(input("Enter the base: "))
             b = int(input("Enter the exponent: "))
@@ -31,7 +31,7 @@ while Active:
                 total =0
                 for j in range(c):
                     total+=a
-            print(total)
+            print(str(a)+"^"+"("+str(b)+")","=",total)
 
         case 3:
             print("\nClosing the Calculator...")

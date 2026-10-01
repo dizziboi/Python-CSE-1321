@@ -8,9 +8,9 @@
 import random
 random_number = random.randint(1, 100)
 #print(random_number)
+print("Guess the number I am thinking!")
 active = True
 while active:
-    print("Guess the number I am thinking!")
     NG = int(input("Enter any number between 1 and 100: "))
     if NG < random_number:
         print("To low!")
