@@ -7,11 +7,11 @@
 
 import time
 
-timestamp = int(input("Type in a big whole number: "))
-print(f"timestamp : {timestamp}")
+timestamp = int(input("Enter the timestamp in seconds: "))
+print(f"Timestamp: {timestamp}")
 print(f"Date and time: {time.ctime(timestamp)}")
 
-pause = int(input("How much to wait"))
-print("waiting")
+pause = int(input("Enter pause length in seconds: "))
+print("Waiting...")
 time.sleep(pause)
-print("Done")
+print("Done!")
