@@ -107,7 +107,7 @@ def calculate_tip(subtotal):
     print("4. Custom")
     print("5. No tip")
 
-    choice = input_choice(1,3)
+    choice = input_choice(1,5)
     if choice == 1:
         return x
     elif choice == 2:
@@ -128,6 +128,7 @@ def calculate_tax(subtotal):
 
 def print_total(subtotal,tip,tax):
     total = subtotal + tip + tax
+    total = round(total,2)
     print()
     print("Subtotal: $"+str(subtotal))
     print("Tip: $"+str(tip))
