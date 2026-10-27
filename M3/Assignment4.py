@@ -70,13 +70,13 @@ def drinks():
         print("7. Return")
         choice = input_choice(1, 7)
         if choice == 1:
-            print("1 Scappy-Cola - Small added")
+            print("1 Scrappy-Cola - Small added")
             amount = amount + 2.49
         elif choice == 2:
-            print("1 Scappy-Cola - Medium added")
+            print("1 Scrappy-Cola - Medium added")
             amount = amount + 2.79
         elif choice == 3:
-            print("1 Scappy-Cola - Large added")
+            print("1 Scrappy-Cola - Large added")
             amount = amount + 2.99
         elif choice == 4:
             print("1 Dr Owl - Small added")
