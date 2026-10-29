@@ -13,26 +13,26 @@ while True:
     print("4 - Quit")
 
     option = int(input("Make your selection: "))
+    print("\n")
     if option == 1:
         email= input("\nEnter the email to be added: ")
         emails.append(email)
-        print("Email added to mailing list.\n")
+        print("\nEmail added to mailing list.\n")
     elif option == 2:
         email= input("\nEnter the email to be removed: ")
         if email in emails:
-            print(f"{email} has been removed from the mailing list")
+            print(f"\n{email} has been removed from the mailing list.")
             emails.remove(email)
         else:
             print(f"No such email in mailing list: {email}")
         print()
 
     elif option == 3:
-        print("Printing emails")
         print()
         for email in emails:
             print(email)
         print()
     elif option == 4:
-        print()
+        print("\n")
         print("Shutting down...")
         break
