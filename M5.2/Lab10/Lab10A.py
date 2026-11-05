@@ -10,15 +10,15 @@ def allMath(in1,in2):
     re2=in1-in2
     re3=in1*in2
     if in1 == 0 or in2 == 0:
-        re4 = "None"
+        re4 = None
     else:
         re4=in1/in2
     if in1 == 0 or in2 == 0:
-        re5 = "None"
+        re5 = None
     else:
         re5=in1//in2
     if in1 == 0 or in2 == 0:
-        re6 = "None"
+        re6 = None
     else:
         re6=in1%in2
     re7=in1**in2
@@ -28,4 +28,4 @@ def allMath(in1,in2):
 num1 = int(input("Enter your first number: "))
 num2 = int(input("Enter your second number: "))
 
-print("Your resulting tuple is", allMath(num1,num2))
+print("Your resulting tuple is",allMath(num1,num2))

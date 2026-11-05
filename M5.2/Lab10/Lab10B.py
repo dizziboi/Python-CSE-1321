@@ -7,13 +7,10 @@
 
 Users = {}
 LoggedIn = False
-LoggedInUser = ""
 
 while True:
     if LoggedIn:
         print("Choose an option")
-        print("1 - Login")
-        print("2 - Register")
         print("3 - Change Password")
         print("4 - Logout")
         print("E - Exit")
@@ -27,33 +24,34 @@ while True:
 
     match ch:
         case "1":
-            print("[Login]")
-            un = input("Username: ")
-            pw = input("Password: ")
-            password = Users[un]
-            if pw == password:
-                print("You in nigga") #Change print statement
+            print("\n[Login]")
+            un = input("Username:")
+            pw = input("\nPassword:")
+            if un in Users and pw == Users[un]:
+                print("\nSuccess!\n") #Change print statement
                 LoggedIn = True
                 LoggedInUser = un
             else:
-                print("Incorrect username/password!")
+                print("Incorrect username/password!\n")
         case "2":
             print("\n[Register]")
-            un = input("Username: ")
-            pw = input("Password: ")
+            un = input("Username:")
+            pw = input("\nPassword:")
             Users[un]=pw
-            print("User successfully added!")
-            print(Users,"\n") #Delete Later
+            #print(Users)
+            print("\nUser successfully added!\n")
 
         case "3":
-            print("Changing something")
-            print(LoggedInUser)
+            print("\n[Changing password]")
+            NewPw= input("Password: ")
+            Users.update({LoggedInUser:NewPw})
+            print()
 
         case "4":
-            print("Logging Out...")
+            print("Logging Out...\n")
             LoggedIn = False
         case "E":
-            print("Goodbye")
+            print("\nTerminating...")
             break
         case _:
-            print("Invalid statement")
+            print("Invalid input")
