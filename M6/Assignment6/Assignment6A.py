@@ -33,7 +33,7 @@ class DeliveryRobot:
     def recharge(self, amount):
         self.bl =+amount
         if self.bl >=100:
-            self.bl = 100 #Makes sure the battery does not over charge
+            self.bl = 100 #Makes sure the battery does not overcharge
 
     def get_robot_info(self):
         if self.has_destination():
@@ -47,7 +47,8 @@ class DeliveryRobot:
             print(f"Destination: None")
             print(f"Completed Deliveries: {self.deliveries}")
 
-Robots = []
+class Robots:
+    list_of_robots = []
 
 while True:
     print("1 - Add a new robot")
@@ -57,10 +58,42 @@ while True:
     print("5 - Display robots with assigned destinations")
     print("6 - Display all robots")
     print("7 - Exit")
+    ch = input("> ")
+
+    match ch:
+        case "1":
+            print("")
+            inName = input("Enter robot name: ")
+            battChoice = input("Use custom battery level? (y/n): ")
+            if battChoice == "y":
+                battP = int(input("Enter battery level: "))
+            else:
+                battP = None
+
+            destChoice = input("Assign a destination? (y/n): ")
+            if destChoice == "y":
+               setDest = input("Enter destination: ")
+            else:
+                setDest = None
+
+            print("Robot added successfully!\n")
+            NewBot = DeliveryRobot(inName)
+            Robots.append(NewBot)
+        case "2":
+            pass
+        case "3":
+            pass
+        case "4":
+            pass
+        case "5":
+            pass
+        case "6":
+            pass
+        case "7":
+            print("[Terminating program...]")
+            break
+        case _:
+                print(Robots)
+                print()
 
 
-#Debug
-clanker = DeliveryRobot("Clanker1")
-clanker.assign_destination("Georgia Tech")
-print(clanker.has_destination())
-clanker.get_robot_info()
